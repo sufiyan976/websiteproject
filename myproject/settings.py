@@ -82,19 +82,19 @@ WSGI_APPLICATION = 'myproject.wsgi.application'
 
 # 
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': BASE_DIR / 'db.sqlite3',
-#     }
-# }
-
 DATABASES = {
-    'default': dj_database_url.parse(os.environ.get("DATABASE_URL")),
-    'ENGINE' : 'django.db.backends.postgresql',
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
+    }
+}
+
+# DATABASES = {
+#     'default': dj_database_url.parse(os.environ.get("DATABASE_URL")),
+#     'ENGINE' : 'django.db.backends.postgresql',
         
     
-}
+# }
 
 
 # Password validation
@@ -136,6 +136,7 @@ MEDIA_URL = '/media/'
 STATIC_DIR = os.path.join(BASE_DIR,'static')
 STATICFILES_DIRS = [STATIC_DIR]
 STATICFILES_LOCATION='static'
+STATIC_ROOT = os.path.join(BASE_DIR,'staticfiles_build','static')
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
@@ -150,3 +151,5 @@ MESSAGE_TAGS = {
     messages.SUCCESS: 'teal',
     
 }
+
+# Import gzip module

@@ -4,6 +4,8 @@ from . models import AbstractBaseUser,usermodel
 from django.contrib.auth import logout, authenticate, login
 from django.contrib import messages
 # from datetime  import datetime
+# Import gzip module
+
 
 def signup(request):
     if request.method == 'POST':
