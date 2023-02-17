@@ -1,0 +1,914 @@
+{% extends 'index.html' %}
+{% load static %}
+
+    
+{% block title %}Home{% endblock title %}
+{% block body %}
+
+
+
+<div class=" w-full mt-2 -z-10 product ">
+  
+
+  <!-- carousal for sm screen-->
+
+  <div id="carouselExampleCaptions" class="-z-10 carousel lg:hidden slide relative" data-bs-ride="carousel">
+    <div class="carousel-indicators absolute right-0 bottom-0 left-0 flex justify-center p-0 mb-4">
+      <button
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide-to="0"
+        class="active"
+        aria-current="true"
+        aria-label="Slide 1"
+      ></button>
+      <button
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide-to="1"
+        aria-label="Slide 2"
+      ></button>
+      <button
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide-to="2"
+        aria-label="Slide 3"
+      ></button>
+      <button
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide-to="3"
+        aria-label="Slide 4"
+      ></button>
+      <button
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide-to="4"
+        aria-label="Slide 5"
+      ></button>
+    </div>
+    <!-- slide 1 -->
+    <div class="carousel-inner relative w-full overflow-hidden">
+      <div class="carousel-item active relative float-left w-full">
+        <img
+          src="{% static 'images/smcarousal1.jpeg' %}"
+          class="block w-full "
+          alt="..."
+        />
+        <div class="carousel-caption text-xs sm:text-lg absolute text-center">
+          <h5 class="text-xs sm:text-lg"></h5>
+          <p>What you wear is how you present yourself.</p>
+        </div>
+      </div>
+      <!-- slide 2 -->
+      <div class="carousel-item relative float-left w-full">
+        <img
+          src="{% static 'images/smcarousal2.jpeg' %}"
+          class="block  w-full"
+          alt="..."
+        />
+        <div class="carousel-caption text-xs sm:text-lg absolute text-center">
+          <h5 class="text-xs sm:text-lg"></h5>
+          <p>Style is reflected from our soul to the outside world.</p>
+        </div>
+      </div>
+      <!-- slide 3 -->
+      <div class="carousel-item relative float-left w-full">
+        <img
+          src="{% static 'images/smcarousal3.jpeg' %}"
+          class="block  w-full"
+          alt="..."
+        />
+        <div class="text-xs carousel-caption h-full sm:text-lg top-0.5 align-text-top absolute text-center">
+          <h5 class="text-xs sm:text-lg"></h5>
+          <p>Girls do not dress for boys. They dress for themselves.</p>
+        </div>
+      </div>
+      <!-- slide 4 -->
+      <div class="carousel-item relative float-left w-full">
+        <img
+          src="{% static 'images/smcarousal4.jpeg' %}"
+          class="block  w-full"
+          alt="..."
+        />
+        <div class="carousel-caption text-xs sm:text-lg absolute text-center">
+          <h5 class="text-xs sm:text-lg"></h5>
+          <p>The joy of dressing is an art..</p>
+        </div>
+      </div>
+      <!-- slide 5 -->
+      <div class="carousel-item relative float-left w-full">
+        <img
+          src="{% static 'images/smcarousal5.jpeg' %}"
+          class="block w-full"
+          alt="..."
+        />
+        <div class="carousel-caption text-xs sm:text-lg  absolute text-center">
+          <h5 class="text-xs sm:text-lg"></h5>
+          <p>If you love something, wear it all the time.</p>
+        </div>
+      </div>
+    </div>
+    <button
+      class="carousel-control-prev absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline left-0"
+      type="button"
+      data-bs-target="#carouselExampleCaptions"
+      data-bs-slide="prev"
+    >
+      <span class="carousel-control-prev-icon inline-block bg-no-repeat" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button
+      class="carousel-control-next absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline right-0"
+      type="button"
+      data-bs-target="#carouselExampleCaptions"
+      data-bs-slide="next"
+    >
+      <span class="carousel-control-next-icon inline-block bg-no-repeat" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+  <!-- carousal for lg screen -->
+  <div id="carouselExampleCaptions1" class=" carousel slide hidden lg:block relative" data-bs-ride="carousel">
+    <div class="carousel-indicators absolute right-0 bottom-0 left-0 flex justify-center p-0 mb-4">
+      <button
+        type="button"
+        data-bs-target="#carouselExampleCaptions1"
+        data-bs-slide-to="0"
+        class="active"
+        aria-current="true"
+        aria-label="Slide 1"
+      ></button>
+      <button
+        type="button"
+        data-bs-target="#carouselExampleCaptions1"
+        data-bs-slide-to="1"
+        aria-label="Slide 2"
+      ></button>
+      <button
+        type="button"
+        data-bs-target="#carouselExampleCaptions1"
+        data-bs-slide-to="2"
+        aria-label="Slide 3"
+      ></button>
+      <button
+        type="button"
+        data-bs-target="#carouselExampleCaptions1"
+        data-bs-slide-to="3"
+        aria-label="Slide 4"
+      ></button>
+      <button
+        type="button"
+        data-bs-target="#carouselExampleCaptions1"
+        data-bs-slide-to="4"
+        aria-label="Slide 5"
+      ></button>
+    </div>
+    <!-- slide 1 -->
+    <div class="carousel-inner relative w-full overflow-hidden">
+      <div class="carousel-item active relative float-left w-full">
+        <img
+          src="{% static 'images/lgcarousal1.jpeg' %}"
+          class="block w-full"
+          alt="..."
+        />
+        <div class="carousel-caption hidden md:block absolute text-center">
+          <h5 class="text-xl">What you wear is how you present yourself.</h5>
+          <p></p>
+        </div>
+      </div>
+      <!-- slide 2 -->
+      <div class="carousel-item relative float-left w-full">
+        <img
+          src="{% static 'images/lgcarousal2.jpeg' %}"
+          class="block  w-full"
+          alt="..."
+        />
+        <div class="carousel-caption hidden md:block absolute text-center">
+          <h5 class="text-xl">Style is reflected from our soul to the outside world</h5>
+          <p></p>
+        </div>
+      </div>
+      <!-- slide 3 -->
+      <div class="carousel-item relative float-left w-full">
+        <img
+          src="{% static 'images/lgcarousal3.jpeg' %}"
+          class="block  w-full"
+          alt="..."
+        />
+        <div class="carousel-caption hidden md:block absolute text-center">
+          <h5 class="text-xl">Girls do not dress for boys. They dress for themselves</h5>
+          <p></p>
+        </div>
+      </div>
+      <!-- slide 4 -->
+      <div class="carousel-item relative float-left w-full">
+        <img
+          src="{% static 'images/lgcarousal4.jpeg' %}"
+          class="block  w-full"
+          alt="..."
+        />
+        <div class="carousel-caption hidden md:block absolute h-full top-1 text-center">
+          <h5 class="text-xl">The joy of dressing is an art..</h5>
+          <p></p>
+        </div>
+      </div>
+      <!-- slide 5 -->
+      <div class="carousel-item relative float-left w-full">
+        <img
+          src="{% static 'images/lgcarousal5.jpeg' %}"
+          class="block w-full"
+          alt="..."
+        />
+        <div class="carousel-caption hidden px-10 rounded-md md:block absolute w-fit mx-auto bg-slate-900 opacity-80 text-center">
+          <h5 class="text-xl">If you love something, wear it all the time</h5>
+          <p></p>
+        </div>
+      </div>
+    </div>
+    <button
+      class="carousel-control-prev absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline left-0"
+      type="button"
+      data-bs-target="#carouselExampleCaptions1"
+      data-bs-slide="prev"
+    >
+      <span class="carousel-control-prev-icon inline-block bg-no-repeat" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button
+      class="carousel-control-next absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline right-0"
+      type="button"
+      data-bs-target="#carouselExampleCaptions1"
+      data-bs-slide="next"
+    >
+      <span class="carousel-control-next-icon inline-block bg-no-repeat" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+</div>
+<div class=" mt-2 sm:py-2 lg:text-lg mx-auto flex justify-center product text-white text-sm  font-semibold bg-gradient-to-tr from-pink-600 to-yellow-600 rounded-md px-2"> <p class="flex justify-center mx-auto">In Demand</p></div>
+<div class="md:flex w-full my-0 mx-auto md:w-fit flex justify-center">
+
+  <img class="absolute flex  md:my-2  rounded-md w-full h-1/2 md:h-1/2 lg:h-2/3 2xl:h-4/5 sm:h-64 my-2 -z-20 opacity-80" src="{% static 'images/bgimage3.jpg' %}" alt="">
+  <div class="  mt-5 mb-3 w-full mx-2  md:mt-8 lg: flex" >
+   
+<div class="flex ">
+  <div class="flex justify-center product xl:w-full xl:mx-1 lg:h-full w-1/2">
+  <div class="flex flex-col rounded-lg shadow-lg bg-white max-w-sm mr-1 sm:ml-1 xl:w-full">
+    <a href="/women">
+      <img class="rounded-t-md" src="{% static 'images/imagec1.jpg' %}" alt=""/>
+    </a>
+    <div class="p-2 h-1/2 md:h-1/4 md:p-4 lg:h-1/2">
+      <div class="">
+      <h5 class="text-gray-900  text-xs lg:text-xl md:text-base product font-medium mb-2">Season Deal</h5></div>
+      <div class="hidden md:block ">
+        
+        <p  class="hidden lg:block  text-gray-700 text-base mb-4">
+          What you wear is how you present yourself to the world.
+        </p>
+      </div></div>
+    
+      <div class="  flex mx-3  mb-4 float-left md:mx-4 lg:mx-6">
+        <a href="/women">
+        <button type="button" class="md:hidden px-3 py-1 md:px-6 md:py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">more</button></a>
+        <a href="/women">
+        <button type="button" class="hidden md:block px-3 py-1  md:px-6 md:py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">see-more</button></a>
+      </div>
+    
+  </div>
+</div>
+<div class="flex justify-center product xl:w-full xl:mx-1 lg:h-full w-1/2">
+  <div class="flex flex-col rounded-lg shadow-lg bg-white max-w-sm mx-1">
+    <a href="/men">
+      <img class="rounded-t-lg" src="{% static 'images/hello/IMG_20230212_131850.jpg' %}" alt=""/>
+    </a>
+    <div class="p-2 h-1/2 md:h-1/4 md:p-4 lg:h-1/2">
+      <div class="">
+      <h5 class="text-gray-900  text-xs lg:text-xl md:text-base font-medium mb-2">Men's Section</h5></div>
+      <div class="hidden lg:block ">
+        
+        <p  class="hidden lg:block  text-gray-700 text-base mb-4">
+          Clothes mean nothing until someone lives in them.
+        </p>
+      </div></div>
+ 
+        <div class=" flex mx-3  mb-4 float-leftmd:mx-4 lg:mx-6 ">
+          <a href="/men">
+          <button type="button" class="md:hidden px-3 py-1 inline-block md:px-6 md:py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">more</button></a>
+          <a href="/men">
+          <button type="button" class="hidden md:block px-3 py-1  md:px-6 md:py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">see-more</button></a>
+
+    </div>
+  </div>
+    </div>
+ </div>
+
+ <div class="flex ">
+<div class="flex justify-center product xl:w-full xl:mx-1 lg:h-full w-1/2">
+  <div class="flex flex-col rounded-lg shadow-lg bg-white max-w-sm mx-1">
+    <a href="/accessories">
+      <img class="rounded-t-lg" src="{% static 'images/hello/IMG_20230212_131827.jpg' %}" alt=""/>
+    </a>
+    <div class="py-2 px-2 h-1/2 md:h-1/4 md:p-4 lg:h-1/2">
+      <div class="">
+      <h5 class="text-gray-900 text-xs md:text-base lg:text-xl font-medium mb-2">Accessories</h5></div>
+      <div class="hidden lg:block ">
+        
+        <p  class="hidden lg:block  text-gray-700 text-base mb-4">
+          Accessories make everything better.
+        </p>
+      </div></div>
+    <div class="flex mx-3  mb-4 float-left md:mx-4 lg:mx-6 ">
+      <a href="/accessories">
+      <button type="button" class="md:hidden px-3 py-1 inline-block md:px-6 md:py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">more</button></a>
+      <a href="/accessories">
+      <button type="button" class="hidden md:block px-3 py-1  md:px-6 md:py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">see-more</button></a>
+    </div>
+    
+  </div>
+</div>
+<!-- <div class="hidden md:block" > -->
+<div class="flex justify-center w-1/2 xl:w-full xl:mx-1 lg:h-full product ">
+  <div class="flex flex-col rounded-lg shadow-lg bg-white max-w-sm ml-1  sm:mr-1 ">
+    <a href="#!">
+      <img class="rounded-t-lg" src="{% static 'images/imagec4.jpg' %}" alt=""/>
+    </a>
+    <div class="p-2 h-1/2 md:h-1/4 md:p-4 lg:h-1/2">
+    <div class="">
+    <h5 class="text-gray-900  text-xs md:text-base lg:text-xl font-medium mb-2"> Smart Watches</h5></div>
+    <div class="hidden lg:block ">
+      
+      <p  class="hidden lg:block  text-gray-700 text-base mb-4">
+        Everyone looks at your watch and it represents your style.
+      </p>
+    </div></div>
+    <div class="flex mx-3 float-left mb-4 md:mx-4 lg:mx-6  ">
+      <a href="/accessories">
+      <button type="button" class="md:hidden px-3 py-1 inline-block md:px-6 md:py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">more</button></a>
+      <a href="/accessories">
+      <button type="button" class="hidden md:block px-3 py-1  md:px-6 md:py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">see-more</button></a>
+    </div>  
+  </div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+<!-- Mobile view cards -->
+ <div class="flex  bg-gradient-to-r z-20 pb-6  border-t-8 border-white from-pink-500 to-yellow-500 lg:hidden md:justify-center " >
+  
+<div class=' rounded-lg md:mr-2'>
+  <div class="flex h-1/2 " >
+
+  
+  <div class="rounded-lg shadow-lg bg-white max-w-sm mx-1 my-3 p-2">
+<div class="" >
+  <div class="text-center text-xl"><h2 class="a-color-base headline truncate-2line"><b class="text-center text-xl sm:text-xl"> Up to 70% off + Extra 10% cashback</b></h2></div>
+  <div class="flex">
+  <div class="">
+    <div class="rounded-lg shadow-lg bg-white max-w-sm mx-1 my-2">
+      <a href="/men">
+        <img class="rounded-t-md" src="{%  static  'images/sample/IMG_20230211_160311.jpg' %}" alt=""/>
+      </a>
+      <div class="a-section a-spacing-none image-label aok-inline-block aok-align-center"><span class="a-size-small a-color-base truncate-2line">Men's Clothing</span></div>
+    </div>
+  </div>
+  <div class="">
+    <div class="rounded-lg shadow-lg bg-white max-w-sm mx-1 my-2">
+      <a href="/men">
+        <img class="rounded-t-lg" src="{%  static  'images/sample/IMG_20230211_160842.jpg' %}" alt=""/>
+      </a>
+      <div class="a-section a-spacing-none image-label aok-inline-block aok-align-center"><span class="a-size-small a-color-base truncate-2line"> Special Offers</span></div>
+    </div>
+  </div>
+</div>
+
+<div class="flex">
+  <div class="">
+    <div class="rounded-lg shadow-lg bg-white max-w-sm mx-1 my-2">
+      <a href="/men">
+        <img class="rounded-t-lg" src="{%  static  'images/sample/IMG_20230211_161928.jpg' %}" alt=""/>
+      </a>
+      <div class="a-section a-spacing-none image-label aok-inline-block aok-align-center"><span class="a-size-small a-color-base truncate-2line">Shirts Combo</span></div>
+    </div>
+  </div>
+  <div class="">
+    <div class="rounded-lg shadow-lg bg-white max-w-sm mx-1 my-2">
+      <a href="/men">
+        <img class="rounded-t-lg" src="{%  static  'images/sample/IMG_20230211_161129.jpg' %}" alt=""/>
+      </a>
+      <div class="a-section a-spacing-none image-label aok-inline-block aok-align-center"><span class="a-size-small a-color-base truncate-2line">For Wedding</span></div>
+    </div>
+  </div>
+  </div>
+  </div>
+</div>
+</div>
+
+
+
+<!-- mobile screen clonening -->
+
+<div class='h-1/2 '>
+
+  <div class=" rounded-lg shadow-lg bg-white max-w-sm mx-1 my-3 p-2">
+<div class="" >
+  <div class="text-center text-xl"><h2 class="a-color-base headline truncate-2line"><b class="text-center text-xl"> Up to 50% off + Extra 5% cashback</b></h2></div>
+  <div class="flex">
+  <div class="">
+    <div class="rounded-lg shadow-lg bg-white max-w-sm mx-1 my-2">
+      <a href="/kid">
+        <img class="rounded-t-md" src="{%  static  'images/cover3/IMG_20230211_154338.jpg' %}" alt=""/>
+      </a>
+      <div class="a-section a-spacing-none image-label aok-inline-block aok-align-center"><span class="a-size-small a-color-base truncate-2line">Kids Clothing</span></div>
+    </div>
+  </div>
+  <div class="">
+    <div class="rounded-lg shadow-lg bg-white max-w-sm mx-1 my-2">
+      <a href="/kid">
+        <img class="rounded-t-lg" src="{%  static  'images/cover3/IMG_20230211_154459.jpg' %}" alt=""/>
+      </a>
+      <div class="a-section a-spacing-none image-label aok-inline-block aok-align-center"><span class="a-size-small a-color-base truncate-2line">Combo Offers</span></div>
+    </div>
+  </div>
+</div>
+
+<div class="flex">
+  <div class="">
+    <div class="rounded-lg shadow-lg bg-white max-w-sm mx-1 my-2">
+      <a href="/kid">
+        <img class="rounded-t-lg" src="{%  static  'images/cover3/IMG_20230211_154447.jpg' %}" alt=""/>
+      </a>
+      <div class="a-section a-spacing-none image-label aok-inline-block aok-align-center"><span class="a-size-small a-color-base truncate-2line">Special Offer</span></div>
+    </div>
+  </div>
+  <div class="">
+    <div class="rounded-lg shadow-lg bg-white max-w-sm mx-1 my-2">
+      <a href="/kid">
+        <img class="rounded-t-lg" src="{%  static  'images/cover3/IMG_20230211_154519.jpg' %}" alt=""/>
+      </a>
+      <div class="a-section a-spacing-none image-label aok-inline-block aok-align-center"><span class="a-size-small a-color-base truncate-2line">Season Deals</span></div>
+    </div>
+  </div>
+  </div>
+  </div>
+</div>
+</div>
+</div>
+
+
+
+<div class=' rounded-lg md:ml-2'>
+  <div class="flex h-1/2 " >
+  <div class="rounded-lg shadow-lg bg-white max-w-sm mx-1 my-3 p-2">
+<div class="" >
+  <div class="text-center text-xl"><h2 class="a-color-base headline truncate-2line"><b class="text-center text-xl"> Up to 80% off + Extra 10% cashback</b></h2></div>
+  <div class="flex">
+  <div class="">
+    <div class="rounded-lg shadow-lg bg-white max-w-sm mx-1 my-2">
+      <a href="/women">
+        <img class="rounded-t-md" src="{%  static  'images/cover2/IMG_20230211_154639.jpg' %}" alt=""/>
+      </a>
+      <div class="a-section a-spacing-none image-label aok-inline-block aok-align-center"><span class="a-size-small a-color-base truncate-2line">Women Clothing</span></div>
+    </div>
+  </div>
+  <div class="">
+    <div class="rounded-lg shadow-lg bg-white max-w-sm mx-1 my-2">
+      <a href="/women">
+        <img class="rounded-t-lg" src="{%  static  'images/cover2/IMG_20230211_154650.jpg' %}" alt=""/>
+      </a>
+      <div class="a-section a-spacing-none image-label aok-inline-block aok-align-center"><span class="a-size-small a-color-base truncate-2line">Tops + Kurtis</span></div>
+    </div>
+  </div>
+</div>
+
+<div class="flex">
+  <div class="">
+    <div class="rounded-lg shadow-lg bg-white max-w-sm mx-1 my-2">
+      <a href="/women">
+        <img class="rounded-t-lg" src="{%  static  'images/cover2/IMG_20230211_154701.jpg' %}" alt=""/>
+      </a>
+      <div class="a-section a-spacing-none image-label aok-inline-block aok-align-center"><span class="a-size-small a-color-base truncate-2line">Combo Offers</span></div>
+    </div>
+  </div>
+  <div class="">
+    <div class="rounded-lg shadow-lg bg-white max-w-sm mx-1 my-2">
+      <a href="/women">
+        <img class="rounded-t-lg w-fit" src="{%  static  'images/cover2/IMG_20230211_154715.jpg' %}" alt=""/>
+      </a>
+      <div class="a-section a-spacing-none image-label aok-inline-block aok-align-center"><span class="a-size-small a-color-base truncate-2line">Bags + Purse</span></div>
+    </div>
+  </div>
+  </div>
+  </div>
+</div>
+</div>
+
+
+
+<div class='h-1/2'>
+
+  <div class=" rounded-lg shadow-lg bg-white max-w-sm mx-1 my-3 p-2">
+<div class="" >
+  <div class="text-center text-xl"><h2 class="a-color-base headline truncate-2line"><b class="text-center text-xl"> Up to 90% off For Couples Buy-Now</b></h2></div>
+  <div class="flex">
+  <div class="">
+    <div class="rounded-lg shadow-lg bg-white max-w-sm mx-1 my-2">
+      <a href="/accessories">
+        <img class="rounded-t-md" src="{%  static  'images/cover4/IMG_20230211_154052.jpg' %}" alt=""/>
+      </a>
+      <div class="a-section a-spacing-none image-label aok-inline-block aok-align-center"><span class="a-size-small a-color-base truncate-2line">Bracelet Offers</span></div>
+    </div>
+  </div>
+  <div class="">
+    <div class="rounded-lg shadow-lg bg-white max-w-sm mx-1 my-2">
+      <a href="/accessories">
+        <img class="rounded-t-lg" src="{%  static  'images/cover4/IMG_20230211_154110.jpg' %}" alt=""/>
+      </a>
+      <div class="a-section a-spacing-none image-label aok-inline-block aok-align-center"><span class="a-size-small a-color-base truncate-2line">Watch Combo</span></div>
+    </div>
+  </div>
+</div>
+
+<div class="flex">
+  <div class="">
+    <div class="rounded-lg shadow-lg bg-white max-w-sm mx-1 my-2">
+      <a href="/accessories">
+        <img class="rounded-t-lg" src="{%  static  'images/cover4/IMG_20230211_154119.jpg' %}" alt=""/>
+      </a>
+      <div class="a-section a-spacing-none image-label aok-inline-block aok-align-center"><span class="a-size-small a-color-base truncate-2line">Combo Offers</span></div>
+    </div>
+  </div>
+  <div class="">
+    <div class="rounded-lg shadow-lg bg-white max-w-sm mx-1 my-2">
+      <a href="/accessories">
+        <img class="rounded-t-lg" src="{%  static  'images/cover4/IMG_20230211_154131.jpg' %}" alt=""/>
+      </a>
+      <div class="a-section a-spacing-none image-label aok-inline-block aok-align-center"><span class="a-size-small a-color-base truncate-2line">Couple Special</span></div>
+    </div>
+  </div>
+  </div>
+  </div>
+</div>
+</div>
+</div>
+</div> 
+
+
+<!-- lg screen breakpoint -->
+<div class="hidden lg:block  " >
+  <div class="flex  bg-gradient-to-r z-20  border-t-8 border-white from-pink-500 to-yellow-500 justify-center" >
+  
+    <div class=" " >
+
+  
+      <div class="rounded-lg shadow-lg bg-white max-w-sm mx-1 my-3 p-2">
+    <div class="" >
+      <div class="text-center text-xl"><h2 class="a-color-base headline truncate-2line"><b class="text-center text-xl sm:text-xl"> Up to 70% off + Extra 10% cashback</b></h2></div>
+      <div class="flex">
+      <div class="">
+        <div class="rounded-lg shadow-lg bg-white max-w-sm mx-1 my-2">
+          <a href="/men">
+            <img class="rounded-t-md" src="{%  static  'images/sample/IMG_20230211_160311.jpg' %}" alt=""/>
+          </a>
+          <div class="a-section a-spacing-none image-label aok-inline-block aok-align-center"><span class="a-size-small a-color-base truncate-2line">Men's Clothing </span></div>
+        </div>
+      </div>
+      <div class="">
+        <div class="rounded-lg shadow-lg bg-white max-w-sm mx-1 my-2">
+          <a href="/men">
+            <img class="rounded-t-lg" src="{%  static  'images/sample/IMG_20230211_160842.jpg' %}" alt=""/>
+          </a>
+          <div class="a-section a-spacing-none image-label aok-inline-block aok-align-center"><span class="a-size-small a-color-base truncate-2line"> Special Offers</span></div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="flex">
+      <div class="">
+        <div class="rounded-lg shadow-lg bg-white max-w-sm mx-1 my-2">
+          <a href="/men">
+            <img class="rounded-t-lg" src="{%  static  'images/sample/IMG_20230211_161928.jpg' %}" alt=""/>
+          </a>
+          <div class="a-section a-spacing-none image-label aok-inline-block aok-align-center"><span class="a-size-small a-color-base truncate-2line">Shirts Combo</span></div>
+        </div>
+      </div>
+      <div class="">
+        <div class="rounded-lg shadow-lg bg-white max-w-sm mx-1 my-2">
+          <a href="/men">
+            <img class="rounded-t-lg" src="{%  static  'images/sample/IMG_20230211_161129.jpg' %}" alt=""/>
+          </a>
+          <div class="a-section a-spacing-none image-label aok-inline-block aok-align-center"><span class="a-size-small a-color-base truncate-2line">Wedding Suits</span></div>
+        </div>
+      </div>
+      </div>
+      </div>
+    </div>
+    </div>
+    <!-- second close -->
+    <!-- clonening -->
+    
+    <div class=' '>
+    
+      <div class=" rounded-lg shadow-lg bg-white max-w-sm mx-1 my-3 p-2">
+    <div class="" >
+      <div class="text-center text-xl"><h2 class="a-color-base headline truncate-2line"><b class="text-center text-xl"> Up to 50% off + Extra 5% cashback</b></h2></div>
+      <div class="flex">
+      <div class="">
+        <div class="rounded-lg shadow-lg bg-white max-w-sm mx-1 my-2">
+          <a href="/kid">
+            <img class="rounded-t-md" src="{%  static  'images/cover3/IMG_20230211_154338.jpg' %}" alt=""/>
+          </a>
+          <div class="a-section a-spacing-none image-label aok-inline-block aok-align-center"><span class="a-size-small a-color-base truncate-2line">Kids Clothing </span></div>
+        </div>
+      </div>
+      <div class="">
+        <div class="rounded-lg shadow-lg bg-white max-w-sm mx-1 my-2">
+          <a href="/kid">
+            <img class="rounded-t-lg" src="{%  static  'images/cover3/IMG_20230211_154459.jpg' %}" alt=""/>
+          </a>
+          <div class="a-section a-spacing-none image-label aok-inline-block aok-align-center"><span class="a-size-small a-color-base truncate-2line">Combo Offers</span></div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="flex">
+      <div class="">
+        <div class="rounded-lg shadow-lg bg-white max-w-sm mx-1 my-2">
+          <a href="/kid">
+            <img class="rounded-t-lg" src="{%  static  'images/cover3/IMG_20230211_154447.jpg' %}" alt=""/>
+          </a>
+          <div class="a-section a-spacing-none image-label aok-inline-block aok-align-center"><span class="a-size-small a-color-base truncate-2line">Season Deal</span></div>
+        </div>
+      </div>
+      <div class="">
+        <div class="rounded-lg shadow-lg bg-white max-w-sm mx-1 my-2">
+          <a href="/kid">
+            <img class="rounded-t-lg" src="{%  static  'images/cover3/IMG_20230211_154519.jpg' %}" alt=""/>
+          </a>
+          <div class="a-section a-spacing-none image-label aok-inline-block aok-align-center"><span class="a-size-small a-color-base truncate-2line">Special Offers</span></div>
+        </div>
+      </div>
+      </div>
+      </div>
+    </div>
+    </div>
+    
+    
+    
+    
+    
+      <div class=" " >
+      <div class="rounded-lg shadow-lg bg-white max-w-sm mx-1 my-3 p-2">
+    <div class="" >
+      <div class="text-center text-xl"><h2 class="a-color-base headline truncate-2line"><b class="text-center text-xl"> Up to 80% off + Extra 10% cashback</b></h2></div>
+      <div class="flex">
+      <div class="">
+        <div class="rounded-lg shadow-lg bg-white max-w-sm mx-1 my-2">
+          <a href="/women">
+            <img class="rounded-t-md" src="{%  static  'images/cover2/IMG_20230211_154639.jpg' %}" alt=""/>
+          </a>
+          <div class="a-section a-spacing-none image-label aok-inline-block aok-align-center"><span class="a-size-small a-color-base truncate-2line">Women's Clothing</span></div>
+        </div>
+      </div>
+      <div class="">
+        <div class="rounded-lg shadow-lg bg-white max-w-sm mx-1 my-2">
+          <a href="/women">
+            <img class="rounded-t-lg" src="{%  static  'images/cover2/IMG_20230211_154650.jpg' %}" alt=""/>
+          </a>
+          <div class="a-section a-spacing-none image-label aok-inline-block aok-align-center"><span class="a-size-small a-color-base truncate-2line">Tops And Kurti</span></div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="flex">
+      <div class="">
+        <div class="rounded-lg shadow-lg bg-white max-w-sm mx-1 my-2">
+          <a href="/women">
+            <img class="rounded-t-lg" src="{%  static  'images/cover2/IMG_20230211_154701.jpg' %}" alt=""/>
+          </a>
+          <div class="a-section a-spacing-none image-label aok-inline-block aok-align-center"><span class="a-size-small a-color-base truncate-2line">Combo Offers </span></div>
+        </div>
+      </div>
+      <div class="">
+        <div class="rounded-lg shadow-lg bg-white max-w-sm mx-1 my-2">
+          <a href="/women">
+            <img class="rounded-t-lg w-fit" src="{%  static  'images/cover2/IMG_20230211_154715.jpg' %}" alt=""/>
+          </a>
+          <div class="a-section a-spacing-none image-label aok-inline-block aok-align-center"><span class="a-size-small a-color-base truncate-2line">Bags + Purses</span></div>
+        </div>
+      </div>
+      </div>
+      </div>
+    </div>
+    </div>
+    
+    
+    
+    <div class=''>
+    
+      <div class=" rounded-lg shadow-lg bg-white max-w-sm mx-1 my-3 p-2">
+    <div class="" >
+      <div class="text-center text-xl"><h2 class="a-color-base headline truncate-2line"><b class="text-center text-xl"> Up to 90% off For Couples Buy-Now</b></h2></div>
+      <div class="flex">
+      <div class="">
+        <div class="rounded-lg shadow-lg bg-white max-w-sm mx-1 my-2">
+          <a href="/accessories">
+            <img class="rounded-t-md" src="{%  static  'images/cover4/IMG_20230211_154052.jpg' %}" alt=""/>
+          </a>
+          <div class="a-section a-spacing-none image-label aok-inline-block aok-align-center"><span class="a-size-small a-color-base truncate-2line">Bracelet Combo</span></div>
+        </div>
+      </div>
+      <div class="">
+        <div class="rounded-lg shadow-lg bg-white max-w-sm mx-1 my-2">
+          <a href="/accessories">
+            <img class="rounded-t-lg" src="{%  static  'images/cover4/IMG_20230211_154110.jpg' %}" alt=""/>
+          </a>
+          <div class="a-section a-spacing-none image-label aok-inline-block aok-align-center"><span class="a-size-small a-color-base truncate-2line">Watch Offers</span></div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="flex">
+      <div class="">
+        <div class="rounded-lg shadow-lg bg-white max-w-sm mx-1 my-2">
+          <a href="/accessories">
+            <img class="rounded-t-lg" src="{%  static  'images/cover4/IMG_20230211_154119.jpg' %}" alt=""/>
+          </a>
+          <div class="a-section a-spacing-none image-label aok-inline-block aok-align-center"><span class="a-size-small a-color-base truncate-2line">Combo Offers</span></div>
+        </div>
+      </div>
+      <div class="">
+        <div class="rounded-lg shadow-lg bg-white max-w-sm mx-1 my-2">
+          <a href="/accessories">
+            <img class="rounded-t-lg" src="{%  static  'images/cover4/IMG_20230211_154131.jpg' %}" alt=""/>
+          </a>
+          <div class="a-section a-spacing-none image-label aok-inline-block aok-align-center"><span class="a-size-small a-color-base truncate-2line">Couple Special</span></div>
+      </div>
+    </div>
+    </div>
+    </div>
+  </div>
+  </div>
+  </div>
+</div>
+</div>
+
+  
+
+<!-- Big billion days -->
+<div class="bg-gradient-to-b content-center items-center flex justify-center  from-blue-100 to-blue-800 my-1 ">
+  
+  <img class="w-fit  z-10" src="{% static 'images/image8-01.jpeg' %}" alt="image">
+</div>
+
+
+
+<!-- Big BILLION DAYS OFFER -->
+
+<div class="z-20 flex flex-col md:flex-row justify-center">
+<div class='z-30 flex justify-center bg-gradient-to-b w-full mx-auto  from-blue-200 to-blue-500 my-2 py-2'>
+  
+  <div class="rounded-lg shadow-lg bg-white max-w-sm mx-3 my-3 p-3">
+<div class="" >
+  <div class="text-center text-2xl"><h2 class="a-color-base headline truncate-2line"><b class="text-center text-2xl"> Up to 90% off On Mens</b></h2></div>
+  <div class="flex">
+  <div class="">
+    <div class="rounded-lg shadow-lg bg-white max-w-sm mx-1 my-2">
+      <a href="/men">
+        <img class="rounded-t-md" src="{% static 'images/sample/IMG_20230211_161954.jpg' %}" alt=""/>
+      </a>
+      <div class="a-section a-spacing-none image-label aok-inline-block aok-align-center"><span class="a-size-small a-color-base truncate-2line">Full Combo</span></div>
+    </div>
+  </div>
+  <div class="">
+    <div class="rounded-lg shadow-lg bg-white max-w-sm mx-1 my-2">
+      <a href="/men">
+        <img class="rounded-t-lg" src="{% static 'images/sample/IMG_20230211_175256.jpg' %}" alt=""/>
+      </a>
+      <div class="a-section a-spacing-none image-label aok-inline-block aok-align-center"><span class="a-size-small a-color-base truncate-2line">Special Offer</span></div>
+    </div>
+  </div>
+</div>
+
+<div class="flex">
+  <div class="">
+    <div class="rounded-lg shadow-lg bg-white max-w-sm mx-1 my-2">
+      <a href="/men">
+        <img class="rounded-t-lg" src="{% static 'images/sample/IMG_20230211_161837.jpg' %}" alt=""/>
+      </a>
+      <div class="a-section a-spacing-none image-label aok-inline-block aok-align-center"><span class="a-size-small a-color-base truncate-2line">Accessories</span></div>
+    </div>
+  </div>
+  <div class="">
+    <div class="rounded-lg shadow-lg bg-white max-w-sm mx-1 my-2">
+      <a href="/men">
+        <img class="rounded-t-lg" src="{% static 'images/sample/IMG_20230211_161020.jpg' %}" alt=""/>
+      </a>
+      <div class="a-section a-spacing-none image-label aok-inline-block aok-align-center"><span class="a-size-small a-color-base truncate-2line">Formal Shirts</span></div>
+    </div>
+  </div>
+  </div>
+  </div>
+</div>
+</div>
+
+
+
+<!-- women -->
+  <div class="flex justify-center w-full mx-auto bg-gradient-to-b from-rose-200 to-rose-500 py-2 my-2">
+  <div class="rounded-lg shadow-lg bg-white max-w-sm mx-3 my-3 p-3">
+<div class="" >
+  <div class="text-center text-2xl"><h2 class="a-color-base headline truncate-2line"><b class="text-center text-2xl"> Up to 90% Off On Women</b></h2></div>
+  <div class="flex">
+  <div class="">
+    <div class="rounded-lg shadow-lg bg-white max-w-sm mx-1 my-2">
+      <a href="/women">
+        <img class="rounded-t-md" src="{% static 'images/days/IMG_20230212_220540.jpg' %}" alt=""/>
+      </a>
+      <div class="a-section a-spacing-none image-label aok-inline-block aok-align-center"><span class="a-size-small a-color-base truncate-2line">Women's Clothing</span></div>
+    </div>
+  </div>
+  <div class="">
+    <div class="rounded-lg shadow-lg bg-white max-w-sm mx-1 my-2">
+      <a href="/women">
+        <img class="rounded-t-lg" src="{% static 'images/days/IMG_20230212_220521.jpg' %}" alt=""/>
+      </a>
+      <div class="a-section a-spacing-none image-label aok-inline-block aok-align-center"><span class="a-size-small a-color-base truncate-2line">More Options</span></div>
+    </div>
+  </div>
+</div>
+
+<div class="flex">
+  <div class="">
+    <div class="rounded-lg shadow-lg bg-white max-w-sm mx-1 my-2">
+      <a href="/women">
+        <img class="rounded-t-lg" src="{% static 'images/bigbillion cover/IMG_20230211_155302.png' %}" alt=""/>
+      </a>
+      <div class="a-section a-spacing-none image-label aok-inline-block aok-align-center"><span class="a-size-small a-color-base truncate-2line">Your Choice</span></div>
+    </div>
+  </div>
+  <div class="">
+    <div class="rounded-lg shadow-lg bg-white max-w-sm mx-1 my-2">
+      <a href="/women">
+        <img class="rounded-t-lg" src="{% static 'images/bigbillion cover/IMG_20230211_155527.jpg' %}" alt="image"/>
+      </a>
+      <div class="a-section a-spacing-none image-label aok-inline-block aok-align-center"><span class="a-size-small a-color-base truncate-2line">Good Quality</span></div>
+    </div>
+  </div>
+  </div>
+  </div>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+<!-- end new -->
+<section class="text-gray-900 bg-blue-200 body-font">
+  <div class="container px-5 py-4 mx-auto flex items-center md:flex-row flex-col">
+    <div class="flex flex-col md:pr-10 md:mb-0 mb-6 pr-0 w-full md:w-auto md:text-left text-center">
+      <h2 class="text-xs text-indigo-500 tracking-widest font-medium title-font mb-1">AVAILABLE ON EVERY PLATFORM</h2>
+      <h1 class="md:text-3xl text-2xl font-medium title-font text-gray-900">Shop With Sufy</h1>
+    </div>
+    <div class="flex md:ml-auto md:mr-0 mx-auto items-center flex-shrink-0 space-x-4">
+      <button class="bg-gray-100 inline-flex py-3 px-5 rounded-lg items-center hover:bg-gray-200 focus:outline-none">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-6 h-6" viewBox="0 0 512 512">
+          <path d="M99.617 8.057a50.191 50.191 0 00-38.815-6.713l230.932 230.933 74.846-74.846L99.617 8.057zM32.139 20.116c-6.441 8.563-10.148 19.077-10.148 30.199v411.358c0 11.123 3.708 21.636 10.148 30.199l235.877-235.877L32.139 20.116zM464.261 212.087l-67.266-37.637-81.544 81.544 81.548 81.548 67.273-37.64c16.117-9.03 25.738-25.442 25.738-43.908s-9.621-34.877-25.749-43.907zM291.733 279.711L60.815 510.629c3.786.891 7.639 1.371 11.492 1.371a50.275 50.275 0 0027.31-8.07l266.965-149.372-74.849-74.847z"></path>
+        </svg>
+        <span class="ml-4 flex items-start flex-col leading-none">
+          <span class="text-xs text-gray-600 mb-1">GET IT ON</span>
+          <span class="title-font font-medium">Google Play</span>
+        </span>
+      </button>
+      <button class="bg-gray-100 inline-flex py-3 px-5 rounded-lg items-center hover:bg-gray-200 focus:outline-none">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-6 h-6" viewBox="0 0 305 305">
+          <path d="M40.74 112.12c-25.79 44.74-9.4 112.65 19.12 153.82C74.09 286.52 88.5 305 108.24 305c.37 0 .74 0 1.13-.02 9.27-.37 15.97-3.23 22.45-5.99 7.27-3.1 14.8-6.3 26.6-6.3 11.22 0 18.39 3.1 25.31 6.1 6.83 2.95 13.87 6 24.26 5.81 22.23-.41 35.88-20.35 47.92-37.94a168.18 168.18 0 0021-43l.09-.28a2.5 2.5 0 00-1.33-3.06l-.18-.08c-3.92-1.6-38.26-16.84-38.62-58.36-.34-33.74 25.76-51.6 31-54.84l.24-.15a2.5 2.5 0 00.7-3.51c-18-26.37-45.62-30.34-56.73-30.82a50.04 50.04 0 00-4.95-.24c-13.06 0-25.56 4.93-35.61 8.9-6.94 2.73-12.93 5.09-17.06 5.09-4.64 0-10.67-2.4-17.65-5.16-9.33-3.7-19.9-7.9-31.1-7.9l-.79.01c-26.03.38-50.62 15.27-64.18 38.86z"></path>
+          <path d="M212.1 0c-15.76.64-34.67 10.35-45.97 23.58-9.6 11.13-19 29.68-16.52 48.38a2.5 2.5 0 002.29 2.17c1.06.08 2.15.12 3.23.12 15.41 0 32.04-8.52 43.4-22.25 11.94-14.5 17.99-33.1 16.16-49.77A2.52 2.52 0 00212.1 0z"></path>
+        </svg>
+        <span class="ml-4 flex items-start flex-col leading-none">
+          <span class="text-xs text-gray-600 mb-1">Download on the</span>
+          <span class="title-font font-medium">App Store</span>
+        </span>
+      </button>
+    </div>
+  </div>
+</section>
+
+
+
+{% endblock body %}
