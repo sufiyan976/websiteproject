@@ -134,12 +134,13 @@ USE_TZ = True
 STATIC_URL = '/static/'
 MEDIA_URL = '/media/'
 SITE_ROOT = os.path.dirname(os.path.realpath(__file__))
-STATIC_DIR = os.path.join(BASE_DIR,'static',SITE_ROOT)
-STATICFILES_DIRS = [STATIC_DIR]
+STATIC_DIR = os.path.join(BASE_DIR,'static')
+# STATICFILES_DIRS = [STATIC_DIR]
 STATICFILES_LOCATION='static'
-STATIC_ROOT =( os.path.join(SITE_ROOT,'static_files/'))
+# STATIC_ROOT =( os.path.join(SITE_ROOT,'static_files/'))
 
-
+STATICFILES_DIRS = os.path.join(BASE_DIR, 'static'),
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build', 'static')
 
 
 # Default primary key field type
