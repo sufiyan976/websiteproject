@@ -1,6 +1,6 @@
 from django.shortcuts import render, HttpResponse, redirect
 from django.contrib.auth.models import User
-from . models import AbstractBaseUser,usermodel
+from . models import AbstractBaseUser,usermodel,usermodel1
 from django.contrib.auth import logout, authenticate, login
 from django.contrib import messages
 # from datetime  import datetime
@@ -69,6 +69,12 @@ def kid(request):
     return render(request,'kid.html')
 
 def contact(request):
+    if request.method == 'POST':
+        name = request.POST.get('name')
+        email1 = request.POST.get('email1')
+        message = request.POST.get('message')
+        model = usermodel1(name=name, email1=email1 , message=message)
+        model.save()
     return render(request,'contact.html')
 
 def about(request):

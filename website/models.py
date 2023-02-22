@@ -28,3 +28,9 @@ class usermodel(AbstractBaseUser):
     # def publish(self):
     #     self.published_date = timezone.now()
     #     self.save()
+
+
+class usermodel1(models.Model):
+    name = models.CharField(max_length=20 ,null=False)
+    email1 = models.CharField(max_length=20 ,null=False)
+    message = models.CharField(max_length=500 ,null=False)
