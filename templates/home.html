@@ -49,6 +49,12 @@
       data-te-slide-to="4"
       class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
       aria-label="Slide 5"></button>
+      <button
+      type="button"
+      data-te-target="#carouselExampleCaptions"
+      data-te-slide-to="5"
+      class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
+      aria-label="Slide 6"></button>
   </div>
   <div
     class="relative w-full overflow-hidden after:clear-both -z-10 after:block after:content-['']">
@@ -58,7 +64,7 @@
       data-te-carousel-item
       style="backface-visibility: hidden">
       <img
-        src="{% static 'images/smcarousal1.jpeg' %}"
+        src="{% static 'images/demo.jpg' %}"
         class="block w-full -z-10"
         alt="..." />
       <div
@@ -74,7 +80,7 @@
       data-te-carousel-item
       style="backface-visibility: hidden">
       <img
-        src="{% static 'images/smcarousal2.jpeg' %}"
+        src="{% static 'images/smcarousal1.jpeg' %}"
         class="block w-full"
         alt="..." />
       <div
@@ -90,14 +96,30 @@
       data-te-carousel-item
       style="backface-visibility: hidden">
       <img
+        src="{% static 'images/smcarousal2.jpeg' %}"
+        class="block w-full"
+        alt="..." />
+      <div
+        class="absolute inset-x-[15%] bottom-5  py-5 text-center text-white md:block carousel-caption  text-xs  sm:text-lg  ">
+        <h5 class="text-xs sm:text-lg"></h5>
+        <p>
+          Girls do not dress for boys. They dress for themselves.
+        </p>
+      </div>
+    </div>
+    <div
+      class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+      data-te-carousel-item
+      style="backface-visibility: hidden">
+      <img
         src="{% static 'images/smcarousal3.jpeg' %}"
         class="block w-full"
         alt="..." />
       <div
-        class="absolute inset-x-[15%] bottom-5  py-5 text-center text-white md:block carousel-caption h-full text-xs  sm:text-lg top-0.5 align-text-top ">
+        class="absolute inset-x-[15%] bottom-5 text-xs sm:text-lg h-full top-0.5 align-text-top py-5 text-center text-white md:block">
         <h5 class="text-xs sm:text-lg"></h5>
         <p>
-          Girls do not dress for boys. They dress for themselves.
+          The joy of dressing is an art..
         </p>
       </div>
     </div>
@@ -110,22 +132,6 @@
         class="block w-full"
         alt="..." />
       <div
-        class="absolute inset-x-[15%] bottom-5 text-xs sm:text-lg  py-5 text-center text-white md:block">
-        <h5 class="text-xs sm:text-lg"></h5>
-        <p>
-          The joy of dressing is an art..
-        </p>
-      </div>
-    </div>
-    <div
-      class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
-      data-te-carousel-item
-      style="backface-visibility: hidden">
-      <img
-        src="{% static 'images/smcarousal5.jpeg' %}"
-        class="block w-full"
-        alt="..." />
-      <div
         class="absolute inset-x-[15%] bottom-5 text-xs sm:text-lg  py-5 text-center text-white sm:block hidden">
         <h5 class="text-xs sm:text-lg"></h5>
         <p>
@@ -133,6 +139,22 @@
         </p>
       </div>
     </div>
+    <div
+    class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+    data-te-carousel-item
+    style="backface-visibility: hidden">
+    <img
+      src="{% static 'images/smcarousal5.jpeg' %}"
+      class="block w-full"
+      alt="..." />
+    <div
+      class="absolute inset-x-[15%] bottom-5 text-xs sm:text-lg  py-5 text-center text-white sm:block hidden">
+      <h5 class="text-xs sm:text-lg hidden"></h5>
+      <p>
+        If you love something, wear it all the time.
+      </p>
+    </div>
+  </div>
   </div>
   <button
     class="absolute top-0 bottom-0 left-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
